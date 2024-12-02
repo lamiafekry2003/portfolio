@@ -14,7 +14,7 @@ export default function Navbar() {
           } md:translate-x-0 transition-transform duration-300 ease-in-out `}
         >
           <div className=" flex justify-center items-center pt-14">
-            <img src={img1} alt="" className=' rounded-full w-36 h-36'/>
+            <img src={img1} alt="img1" className=' rounded-full w-36 h-36'/>
           </div>
           <div className=' text-center my-4'>
             <a to='#' className=' text-2xl font-extrabold font-serif'>Jackson Ford</a>

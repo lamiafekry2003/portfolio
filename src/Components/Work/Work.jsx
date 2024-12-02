@@ -15,12 +15,12 @@ export default function Work() {
     setActiveCategory(category);
   };
   let images = [
-    { src: img1 },
-    { src: img2 },
-    { src: img3 },
-    { src: img4 },
-    { src: img5 },
-    { src: img6 },
+    { src: img1 ,alt:'img1'},
+    { src: img2 ,alt:'img2'},
+    { src: img3 ,alt:'img3' },
+    { src: img4 ,alt:'img4'},
+    { src: img5,alt:'img5' },
+    { src: img6 ,alt:'img6'},
   ];
 
   return (
@@ -49,7 +49,7 @@ export default function Work() {
       <div className="grid grid-cols-1 md:grid-cols-2">
         {images.map((image) => (
           <div key={image.src} className={`${style.works} relative mr-5 my-3`}>
-            <img src={image.src} alt="" className="w-full h-96 object-cover" />
+            <img src={image.src} alt={image.alt} className="w-full h-96 object-cover" />
             <div className={`${style.overlay} absolute inset-0 flex flex-col  text-left p-8  text-white opacity-0 hover:opacity-100 transition-opacity duration-300 bg-blue-500 `}>
              <div>
              <p className="underline mb-5 tracking-[2px]">WORK 2</p>
