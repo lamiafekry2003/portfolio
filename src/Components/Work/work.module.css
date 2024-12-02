@@ -1,0 +1,60 @@
+/* .works {
+    position: relative;
+    overflow: hidden;
+}
+
+.works::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #3b82f6;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+}
+
+.works:hover::before {
+    opacity: 1;
+}
+.overlay{
+    opacity: 0;
+}
+.overlay:hover{
+    opacity: 1;
+    z-index: 899;
+} */
+.works {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .works::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0c66f8; /* Blue color for the background */
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+  }
+  
+  .works:hover::before {
+    opacity: 1;
+  }
+  
+  .overlay {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 3;
+  }
+  
+  .works:hover .overlay {
+    opacity: 1;
+    z-index: 3;
+  }
