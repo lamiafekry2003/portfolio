@@ -20,7 +20,10 @@ ul li {
   position: relative;
   list-style: none;
 }
-
+.swiper {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 ul li a {
   text-decoration: none;
   color: #333;

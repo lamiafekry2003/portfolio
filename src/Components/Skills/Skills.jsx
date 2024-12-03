@@ -61,14 +61,14 @@ export default function Skills() {
                     className={`text-xs font-medium text-center p-0.5 leading-none rounded-full ${skill.color}`}
                     style={{ width: `${skill.score}%` }}
                   >
-                    {/* Optional text or icon can go here */}
+                    
                   </div>
                   <div
                     className={`absolute -bottom-2.5 transform -translate-y-1/2 ${skill.color} rounded-full`}
                     style={{
                       width: '20px',
                       height: '20px',
-                      left: `${skill.score-2}%`, // Position the circle at the score
+                      left: `${skill.score-2}%`, 
                       border: '2px solid white',
                     }}
                   ></div>
